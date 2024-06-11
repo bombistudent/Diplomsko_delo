@@ -1,0 +1,342 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_VIN",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_brand",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_model",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_yearOfManufacture",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_color",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_enginePower",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_transmission",
+				"type": "string"
+			}
+		],
+		"name": "addVehicle",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_VIN",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_dateOfFirstRegistration",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_countryOfFirstRegistration",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_kilometers",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_services",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_technicalInspection",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_accidents",
+				"type": "string"
+			}
+		],
+		"name": "addVehicleData",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_VIN",
+				"type": "string"
+			}
+		],
+		"name": "displayData",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "VIN",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address[]",
+						"name": "allOwners",
+						"type": "address[]"
+					},
+					{
+						"internalType": "string",
+						"name": "brand",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "model",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "yearOfManufacture",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "color",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "enginePower",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "transmission",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dateOfFirstRegistration",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "countryOfFirstRegistration",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "kilometers",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "services",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "technicalInspections",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "accidents",
+						"type": "string[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "timestamps",
+						"type": "uint256[]"
+					}
+				],
+				"internalType": "struct BlockWheels.Vehicle",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "ownershipTransfers",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			},
+			{
+				"internalType": "bool",
+				"name": "approved",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_VIN",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "uniqueVIN",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "vehicles",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "VIN",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "brand",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "model",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "yearOfManufacture",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "color",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "enginePower",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "transmission",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "dateOfFirstRegistration",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "countryOfFirstRegistration",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

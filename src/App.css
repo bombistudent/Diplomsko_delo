@@ -1,38 +1,143 @@
-.App {
+.container {
+  max-width: 800px;
+  background-color: #f8f8f8;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header__title {
+  font-size: 36px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tabs {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.tabs button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tabs button:hover {
+  background-color: #2980b9;
+}
+
+.tabs button.active {
+  background-color: #333;
+}
+
+.tab-content {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.add-vehicle-form {
+  max-width: 4000px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-vehicle-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.add-vehicle-form input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+}
+
+.submit-btn1 {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+  margin-left: auto;
+}
+
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+.submit-btn1:hover {
+  background-color: #2980b9;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 93%;
+  padding-right: 25px; /* Add padding to the right side of the wrapper */
+}
+
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%; /* Set width to 100% to fill the wrapper */
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1; /* Add z-index to ensure the select element appears above the arrow */
+  color: #999
+}
+
+/* Initial color same as placeholder */
+.select-wrapper select {
+  color: #000000; /* Placeholder color */
+}
+
+
+/* Hover effect for the select */
+.select-wrapper:hover select {
+  background-color: #eaeaea; /* Change background color on hover */
 }
